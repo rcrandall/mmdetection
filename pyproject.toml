@@ -1,0 +1,12 @@
+# pyproject.toml
+[build-system]
+# These are the packages needed to execute setup.py
+requires = [
+    "setuptools", # Specify a reasonable minimum version
+    "wheel",
+    "torch",
+    "numpy",
+    "cython"
+ ]
+build-backend = "setuptools.build_meta" # Use the standard setuptools backend
+backend-path = ["."] # Specifies where to find the backend (optional, usually implied)
